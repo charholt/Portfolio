@@ -1639,3 +1639,82 @@ textarea.form-control {
 		padding: 3em 0;
 	}
 }
+
+
+.side {
+  width: 100%;
+  float: left;
+  margin-bottom: 5em; }
+  .side .form-group {
+    margin-bottom: 0;
+    position: relative;
+    width: 100%; }
+    @media screen and (max-width: 480px) {
+      .side .form-group {
+        width: 100%; } }
+    .side .form-group input::-webkit-input-placeholder {
+      color: #333333; }
+    .side .form-group input::-moz-input-placeholder {
+      color: #333333; }
+    .side .form-group input::-ms-input-placeholder {
+      color: #333333; }
+    .side .form-group input::-o-input-placeholder {
+      color: #333333; }
+    .side .form-group input::input-placeholder {
+      color: #333333; }
+  .side #search {
+    font-size: 18px;
+    width: 100%;
+    padding-right: 3em;
+    border: 1px solid #f0f0f0;
+    background: #fff;
+    color: #333333 !important; }
+    .side #search:focus {
+      border: 1px solid #dbdbdb; }
+  .side button {
+    position: absolute;
+    top: 0;
+    right: -4px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    background: #F6490D;
+    color: #fff;
+    border: none;
+    padding: 14px; }
+  .side .instagram-entry {
+    width: 100%;
+    display: block;
+    z-index: 0; }
+    .side .instagram-entry .instagram {
+      width: 50%;
+      float: left;
+      height: 130px;
+      position: relative; }
+      .side .instagram-entry .instagram:after, .side .instagram-entry .instagram:before {
+        position: absolute;
+        top: 30px;
+        left: 10px;
+        right: 0;
+        width: 40px;
+        height: 1px;
+        content: '';
+        background: #fff;
+        opacity: 0;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+      .side .instagram-entry .instagram:before {
+        width: 1px;
+        height: 40px;
+        top: 11px;
+        left: 30px; }
+      @media screen and (max-width: 768px) {
+        .side .instagram-entry .instagram {
+          width: 25%; } }
+      @media screen and (max-width: 480px) {
+        .side .instagram-entry .instagram {
+          width: 50%; } }
+      .side .instagram-entry .instagram:hover:after, .side .instagram-entry .instagram:hover:before, .side .instagram-entry .instagram:focus:after, .side .instagram-entry .instagram:focus:before {
+        opacity: 1; }
