@@ -1792,6 +1792,16 @@ textarea.form-control {
   }
 }
 
+#colorlib-instagram {
+  padding: 7em 0;
+  clear: both; }
+  @media screen and (max-width: 768px) {
+    #colorlib-container,
+    #colorlib-instagram,
+    #colorlib-about,
+    #colorlib-contact,
+    #colorlib-footer {
+      padding: 3em 0; } }
 
 .instagram,
  {
