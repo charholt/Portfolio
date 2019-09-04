@@ -2,6 +2,17 @@
 @import "variables";
 @import "mixins";
 
+
+.scrolling-wrapper {
+  -webkit-overflow-scrolling: touch;
+}
+
+.scrolling-wrapper {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 html {
 	overflow-x: hidden;
 }

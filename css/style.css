@@ -10,6 +10,18 @@ body {
   font-weight: 300;
   color: gray;
 }
+.row li {
+  width: 33.3%;
+  float: left;
+}
+
+img {
+  border: 0 none;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
 
 p, ul, ol {
   margin-bottom: 30px;
@@ -170,8 +182,8 @@ textarea.form-control {
 .site-header .site-logo {
   line-height: 0;
   padding: 2px 10px;
-  border: 2px solid #000;
-  color: #000;
+  border: 2px solid #f8f9fa;
+  color: #f8f9fa;
   font-size: 30px;
   font-weight: bold;
 }
