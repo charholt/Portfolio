@@ -1892,3 +1892,8 @@ textarea.form-control {
             margin: auto;
             text-align: center;
         }
+
+        #section-contact img {
+            max-width: 15%;
+            height: auto;
+        }
