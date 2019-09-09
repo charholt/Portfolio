@@ -1297,6 +1297,18 @@ textarea.form-control {
   margin: 0 auto;
 }
 
+.cover_1 .sub-heading-1 {
+  color: white;
+  font-size: 35px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+@media (max-width: 991.98px) {
+  .cover_1 .sub-heading {
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 991.98px) {
   .cover_1 .sub-heading {
     font-size: 20px;
