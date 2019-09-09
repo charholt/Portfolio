@@ -1892,15 +1892,3 @@ textarea.form-control {
             margin: auto;
             text-align: center;
         }
-
-  #section-contact img {
-      max-width: 15%;
-      height: auto;
-  }
-  @media screen and (max-width: 10%) {
-
-      #section-contact {
-          display: block;
-          width: 8%;
-          margin: 0 auto;
-      }
