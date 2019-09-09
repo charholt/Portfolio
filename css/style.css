@@ -1879,3 +1879,16 @@ textarea.form-control {
           margin-left: auto;
           margin-right: auto;
        }
+
+
+       .skill-icon {
+            font-size: 10vh;
+        }
+
+        .skill-icon-box {
+            min-height: 15vh;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            text-align: center;
+        }

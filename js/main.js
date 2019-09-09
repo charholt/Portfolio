@@ -1,7 +1,7 @@
 AOS.init({
   duration: 600
 });
-  
+
 
 (function($) {
 
@@ -20,7 +20,7 @@ AOS.init({
 
   // loader
   var loader = function() {
-    setTimeout(function() { 
+    setTimeout(function() {
       if($('#loader').length > 0) {
         $('#loader').removeClass('show');
       }
@@ -35,7 +35,7 @@ AOS.init({
     $(".smoothscroll[href^='#'], #ftco-navbar ul li a[href^='#']").on('click', function(e) {
       e.preventDefault();
       var hash = this.hash;
-        
+
       $('html, body').animate({
 
         scrollTop: $(hash).offset().top
@@ -63,17 +63,17 @@ AOS.init({
 
     if (st > 150) {
       if ( !navbar.hasClass('scrolled') ) {
-        navbar.addClass('scrolled');  
+        navbar.addClass('scrolled');
       }
-    } 
+    }
     if (st < 150) {
       if ( navbar.hasClass('scrolled') ) {
         navbar.removeClass('scrolled sleep');
       }
-    } 
+    }
     if ( st > 350 ) {
       if ( !navbar.hasClass('awake') ) {
-        navbar.addClass('awake'); 
+        navbar.addClass('awake');
       }
     }
     if ( st < 350 ) {
@@ -83,7 +83,7 @@ AOS.init({
       }
     }
 
-  }); 
+  });
 
 
   $('.js-site-nav-toggle').on('click', function(e) {
@@ -91,7 +91,7 @@ AOS.init({
     var $this = $(this);
     e.preventDefault();
 
- 
+
 
     if ( $('body').hasClass('menu-open') ) {
       $this.removeClass('active');
@@ -104,7 +104,7 @@ AOS.init({
 
           // $(this).removeClass('is-show');
         });
-      
+
       setTimeout(function() {
         // $('.site-menu').fadeOut(400);
         $('.site-menu').removeClass('site-menu-show');
@@ -128,13 +128,13 @@ AOS.init({
 
         });
       }, 500);
-      
+
     }
 
   });
 
 
-	
+
 	$('nav .dropdown').hover(function(){
 		var $this = $(this);
 		$this.addClass('show');
@@ -286,7 +286,7 @@ AOS.init({
   $('#time').timepicker();
 
 
-  //------- Google Map  js --------//  
+  //------- Google Map  js --------//
 
     if (document.getElementById("map")) {
         google.maps.event.addDomListener(window, 'load', init);
@@ -425,3 +425,40 @@ AOS.init({
 
 
 })(jQuery);
+
+
+
+var timer = 4000;
+
+var i = 0;
+var max = $('#tech-carousel > li').length;
+
+	$("#tech-carousel > li").eq(i).addClass('active').css('left','0');
+	$("#tech-carousel > li").eq(i + 1).addClass('active').css('left','25%');
+	$("#tech-carousel > li").eq(i + 2).addClass('active').css('left','50%');
+	$("#tech-carousel > li").eq(i + 3).addClass('active').css('left','75%');
+
+
+	setInterval(function(){
+
+		$("#tech-carousel > li").removeClass('active');
+
+		$("#tech-carousel > li").eq(i).css('transition-delay','0.25s');
+		$("#tech-carousel > li").eq(i + 1).css('transition-delay','0.5s');
+		$("#tech-carousel > li").eq(i + 2).css('transition-delay','0.75s');
+		$("#tech-carousel > li").eq(i + 3).css('transition-delay','1s');
+
+		if (i < max-4) {
+			i = i+4;
+		}
+
+		else {
+			i = 0;
+		}
+
+		$("#tech-carousel > li").eq(i).css('left','0').addClass('active').css('transition-delay','1.25s');
+		$("#tech-carousel > li").eq(i + 1).css('left','25%').addClass('active').css('transition-delay','1.5s');
+		$("#tech-carousel > li").eq(i + 2).css('left','50%').addClass('active').css('transition-delay','1.75s');
+		$("#tech-carousel > li").eq(i + 3).css('left','75%').addClass('active').css('transition-delay','2s');
+
+	}, timer);
