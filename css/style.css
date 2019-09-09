@@ -354,6 +354,9 @@ textarea.form-control {
 .section-heading .sub-heading {
   font-size: 20px;
 }
+.section-heading-1 .sub-heading-1 {
+  font-size: 30px;
+}
 
 .section-heading .small-sub-heading {
   font-size: 14px;
